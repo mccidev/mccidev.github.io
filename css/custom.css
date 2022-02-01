@@ -1,0 +1,21 @@
+/* 
+
+1. Add your custom Css styles below
+2. Place the this code in your template: 
+
+ <link href="css/custom.css" rel="stylesheet">
+
+*/
+
+.card {
+    background-color: #ffffff00;
+}
+
+.card-title, .card-body, .card-text {
+    color: white;
+}
+
+a.btn-light:focus {
+    background-color: #fff !important;
+    color: black !important;
+}
