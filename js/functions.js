@@ -61,6 +61,9 @@ var INSPIRO = {},
     menuIsOpen: false,
     menuOverlayOpened: false,
   }
+
+  var $containerHeight = $(window).height();
+  var $containerwidth = $(window).width();
   //Window breakpoints
   $(window).breakpoints({
     triggerOnInit: true,
@@ -668,9 +671,17 @@ var INSPIRO = {},
             if ($(this).attr("data-animate-duration")) {
               animationDuration = $(this).attr("data-animate-duration") + "ms";
             }
-            $captionElem.css({
-              opacity: 0
-            })
+            var updatedContainerWidth =  $(window).width();
+              $(window).resize(function () {
+                updatedContainerWidth = $(window).width();
+              });
+
+              if (windowWidth == updatedContainerWidth) {
+                $captionElem.css({
+                  opacity: 0
+                })
+              }
+              
             $(this).css("animation-duration", animationDuration);
           })
           $captions.each(function (index) {

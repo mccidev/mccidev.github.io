@@ -19,3 +19,14 @@ a.btn-light:focus {
     background-color: #fff !important;
     color: black !important;
 }
+
+.logo {
+    width: 400px;
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 399px) {
+    .logo {
+        width: 276px;
+    }
+}

@@ -4227,9 +4227,9 @@ h6.font-parisienne {
   opacity: 0;
   visibility: hidden;
 }
-.inspiro-slider .slide .slide-captions img {
+/* .inspiro-slider .slide .slide-captions img {
   width: inherit !important;
-}
+} */
 .inspiro-slider .slide.is-selected {
   z-index: 2;
 }
